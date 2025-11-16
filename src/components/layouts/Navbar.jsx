@@ -3,7 +3,6 @@ const Navbar = ({ onMenuClick }) => {
   return (
     <nav className=" fixed top-0 right-0 h-16 bg-white shadow flex items-center px-4 sm:px-8 z-40 w-full lg:w-[calc(100%-16rem)] lg:ml-64 ">
       {" "}
-      {/* Hamburger - Mobile only */}{" "}
       <button className="lg:hidden p-2 mr-3" onClick={onMenuClick}>
         {" "}
         <svg

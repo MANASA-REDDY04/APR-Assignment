@@ -1,4 +1,3 @@
-// src/components/charts/LineChart.jsx
 import {
   LineChart as ReLineChart,
   Line,

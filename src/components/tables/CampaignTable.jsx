@@ -1,4 +1,3 @@
-// src/components/tables/CampaignTable.jsx
 const CampaignTable = ({ data }) => {
   return (
     <div className="

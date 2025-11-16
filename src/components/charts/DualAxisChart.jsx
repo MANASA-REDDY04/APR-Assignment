@@ -1,4 +1,3 @@
-// src/components/charts/DualAxisChart.jsx
 import {
   ComposedChart,
   Line,
@@ -26,7 +25,7 @@ const DualAxisChart = ({ data }) => {
         <Bar
           yAxisId="left"
           dataKey="spend"
-          fill="#BFDBFE"     // pastel sky blue
+          fill="#BFDBFE"    
           radius={[10, 10, 0, 0]}
         />
 
@@ -35,7 +34,7 @@ const DualAxisChart = ({ data }) => {
           yAxisId="right"
           type="monotone"
           dataKey="roas"
-          stroke="#F472B6"   // pastel rose
+          stroke="#F472B6"
           strokeWidth={3}
           dot={{ r: 3, strokeWidth: 2 }}
         />

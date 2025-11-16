@@ -1,5 +1,3 @@
-// src/pages/Login.jsx
-
 import { useState } from "react";
 
 const Login = () => {
@@ -26,7 +24,6 @@ const Login = () => {
         </h2>
 
         <form className="space-y-5">
-          {/* Email */}
           <div>
             <label className="block mb-1 text-gray-600">Email</label>
             <input
@@ -41,7 +38,6 @@ const Login = () => {
             />
           </div>
 
-          {/* Password */}
           <div>
             <label className="block mb-1 text-gray-600">Password</label>
             <input
@@ -56,7 +52,6 @@ const Login = () => {
             />
           </div>
 
-          {/* Button */}
           <button
             type="submit"
             className="

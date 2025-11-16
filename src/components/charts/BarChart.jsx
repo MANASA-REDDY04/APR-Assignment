@@ -1,4 +1,3 @@
-// src/components/charts/BarChart.jsx
 import {
   BarChart as ReBarChart,
   Bar,
@@ -22,7 +21,7 @@ const BarChart = ({ data, dataKey }) => {
 
         <Bar
           dataKey={dataKey}
-          fill="#FBCFE8"     // pastel pink
+          fill="#FBCFE8"     
           radius={[10, 10, 0, 0]}
         />
       </ReBarChart>

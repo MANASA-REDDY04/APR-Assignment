@@ -22,7 +22,6 @@ const Dashboard = () => {
   const [search, setSearch] = useState("");
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
-  // ----------------- DATA (unchanged) -----------------
 
   const impressionsCTR = [
     { label: "Winter Sale 2025", impressions: 200000 },
@@ -44,7 +43,6 @@ const Dashboard = () => {
   ];
 
 
-  // ----------------- FILTERING -----------------
   const filteredProducts = topProducts.filter((p) =>
     p.name.toLowerCase().includes(search.toLowerCase())
   );
@@ -56,12 +54,10 @@ const Dashboard = () => {
   return (
     <div className="flex w-full">
 
-      {/* Sidebar (mobile + desktop) */}
       <Sidebar open={sidebarOpen} setOpen={setSidebarOpen} />
 
       <div className="flex-1">
 
-        {/* Navbar */}
         <Navbar
           onSearch={(text) => setSearch(text)}
           onMenuClick={() => setSidebarOpen(!sidebarOpen)}
@@ -69,14 +65,11 @@ const Dashboard = () => {
 
         <PageWrapper>
 
-          {/* Metrics */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
             {metrics.map((m, idx) => (
               <MetricCard key={idx} title={m.title} value={m.value} change={m.change} />
             ))}
           </div>
-
-          {/* Charts Row */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
             <ChartCard title="Sales Over Time">
               <LineChart data={salesOverTime} />
@@ -87,14 +80,11 @@ const Dashboard = () => {
             </ChartCard>
           </div>
 
-          {/* Spend vs ROAS */}
           <div className="grid grid-cols-1 gap-8 mb-8">
             <ChartCard title="Spend vs ROAS">
               <DualAxisChart data={spendRoasData} />
             </ChartCard>
           </div>
-
-          {/* Tables */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             <TopProductsTable data={filteredProducts} />
             <CampaignTable data={filteredCampaigns} />

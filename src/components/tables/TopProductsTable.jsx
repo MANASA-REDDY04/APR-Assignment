@@ -1,4 +1,3 @@
-// src/components/tables/TopProductsTable.jsx
 const TopProductsTable = ({ data }) => {
   return (
     <div className="

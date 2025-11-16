@@ -12,14 +12,13 @@ function App() {
       {" "}
       <Routes>
         {" "}
-        {/* Login */} <Route path="/login" element={<Login />} />{" "}
-        {/* All other pages use Layout */}{" "}
+        <Route path="/login" element={<Login />} />
         <Route element={<Layout />}>
           {" "}
-          <Route path="/" element={<Dashboard />} />{" "}
-          <Route path="/reports" element={<Reports />} />{" "}
-          <Route path="/campaigns" element={<Campaigns />} />{" "}
-          <Route path="/products" element={<Products />} />{" "}
+          <Route path="/" element={<Dashboard />} />
+          <Route path="/reports" element={<Reports />} />
+          <Route path="/campaigns" element={<Campaigns />} />
+          <Route path="/products" element={<Products />} />
         </Route>{" "}
       </Routes>{" "}
     </Router>

@@ -9,16 +9,12 @@ const Layout = () => {
   return (
     <div className="w-full h-screen flex bg-gray-100">
 
-      {/* SIDEBAR */}
       <Sidebar open={open} setOpen={setOpen} />
 
-      {/* MAIN AREA */}
       <div className="flex flex-col flex-1 lg:ml-64">
 
-        {/* NAVBAR */}
         <Navbar onMenuClick={() => setOpen(!open)} />
 
-        {/* PAGE CONTENT */}
         <main className="p-4 overflow-auto h-[calc(100vh-64px)] mt-16 lg:mt-0">
           <Outlet />
         </main>
