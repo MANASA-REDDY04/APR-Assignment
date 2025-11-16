@@ -1,20 +1,91 @@
-<<<<<<< HEAD
-# React + Vite
+# APR Assignment
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a responsive dashboard application built using React. It includes a sidebar, a navbar, and multiple pages such as Dashboard, Reports, Campaigns, Products, and Settings. The layout is designed to work on both mobile and desktop screens with proper routing and component structure.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Fully responsive layout with sidebar and navbar
+- Mobile menu drawer with toggle functionality
+- Dashboard and other pages in separate components
+- React Router-based navigation
+- Clean folder structure with reusable UI components
+- Deployed on Vercel with support for client-side routing
 
-## React Compiler
+## Folder Structure
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```
+src/
+├── components/
+│   ├── Navbar.jsx
+│   ├── Sidebar.jsx
+│   └── Layout.jsx
+├── pages/
+│   ├── Dashboard.jsx
+│   ├── Reports.jsx
+│   ├── Campaigns.jsx
+│   ├── Products.jsx
+│   └── Settings.jsx
+├── App.jsx
+├── main.jsx
+└── index.css
+```
 
-## Expanding the ESLint configuration
+## Installation
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-=======
-# APR-Assignment
->>>>>>> e0aeb6874d5d367305b816a8fa8809f41fb3b720
+Clone the repository:
+
+```
+git clone https://github.com/MANASA-REDDY04/APR-Assignment.git
+cd APR-Assignment
+```
+
+Install dependencies:
+
+```
+npm install
+```
+
+Run the development server:
+
+```
+npm run dev
+```
+
+## Deployment on Vercel
+
+To avoid "Page Not Found" errors when refreshing, add a `vercel.json` file in the project root:
+
+```
+{
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/" }
+  ]
+}
+```
+
+After adding the file:
+
+```
+git add vercel.json
+git commit -m "Add Vercel routing fix"
+git push
+```
+
+## Build for Production
+
+```
+npm run build
+```
+
+This generates the production-ready `dist` folder.
+
+## Technologies Used
+
+- React
+- React Router
+- Vite
+- Tailwind CSS
+
+## License
+
+This project is created for assignment and educational usage. You may modify or extend it as needed.
