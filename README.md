@@ -11,24 +11,8 @@ This project is a responsive dashboard application built using React. It include
 - Clean folder structure with reusable UI components
 - Deployed on Vercel with support for client-side routing
 
-## Folder Structure
-
-```
-src/
-├── components/
-│   ├── Navbar.jsx
-│   ├── Sidebar.jsx
-│   └── Layout.jsx
-├── pages/
-│   ├── Dashboard.jsx
-│   ├── Reports.jsx
-│   ├── Campaigns.jsx
-│   ├── Products.jsx
-│   └── Settings.jsx
-├── App.jsx
-├── main.jsx
-└── index.css
-```
+## Live Demo
+https://apr-assignment.vercel.app
 
 ## Installation
 
